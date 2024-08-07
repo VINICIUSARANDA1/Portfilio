@@ -1,33 +1,19 @@
-*{
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body, html {
-    height: 100%;
-    margin: 0;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex: 1;
-}
-.languages {
-    margin-top: 10px;
-}
-.languages ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
-}
-.languages li {
-    margin-right: 1em;
-}
-.links ul {
+  }
+  
+  header {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav.links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -35,12 +21,111 @@ main {
     justify-content: center;
     margin-bottom: 2em;
     margin-top: 2em;
-}
-.links li {
+  }
+  
+  nav.links li {
     margin-right: 15px;
-}
-
-footer{
+  }
+  
+  nav.links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav.links a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  #hamburger-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the languages menu */
+  .languages {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px; /* Adjust width as needed */
+  }
+  
+  .languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .languages li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .languages li:last-child {
+    border-bottom: none;
+  }
+  
+  .languages a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .languages a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Show the menu when the class 'show' is added */
+  .languages.show {
+    display: block;
+  }
+  
+  main {
+    padding: 2em;
     text-align: center;
-}
-
+  }
+  
+  main h1, main h2 {
+    margin: 0.5em 0;
+  }
+  
+  .redes_sociais {
+    margin-top: 2em;
+  }
+  
+  .redes_sociais p {
+    font-weight: bold;
+  }
+  
+  .redes_sociais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes_sociais li {
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  footer {
+    background-color: #f4f4f4;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+  };
